@@ -1,4 +1,3 @@
-local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
 ----------------------------------------------------------------------------------------------------------------------------------------------
@@ -2906,7 +2905,7 @@ local Mastery = Tabs.Main:AddSection("Mastery Farm")
 
     local SliderHealt = Tabs.Main:AddSlider("SliderHealt", {
         Title = "Health (%) Mob",
-        Description = "Phần Trăm Máu Quái",
+        Description = "เปอร์เซ็นเลือดมอน",
         Default = 25,
         Min = 0,
         Max = 100,
@@ -5750,7 +5749,7 @@ end)
 
 Tabs.Teleport:AddButton({
     Title = "Tween",
-    Description = "Bay Đến Đảo",
+    Description = "บินไปยังเกาะ",
     Callback = function()
             if _G.SelectIsland == "WindMill" then
                 toTarget(CFrame.new(979.79895019531, 16.516613006592, 1429.0466308594))
@@ -7362,7 +7361,7 @@ local Mastery = Tabs.Misc:AddSection("Day")
 
 Tabs.Misc:AddButton({
 	Title = "Remove Fog",
-	Description = "Xóa xương mù",
+	Description = "ลบหมอก",
 	Callback = function()
         NoFog()
     end
